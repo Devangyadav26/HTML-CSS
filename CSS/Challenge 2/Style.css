@@ -1,16 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.sale {
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 7px 15px;
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: 20px;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.4;
+  margin-left: 20px;
 }
 
 .product {
   border: 4px solid black;
+  position: relative;
 }
 
 .product-title {
   font-weight: bold;
   text-align: center;
-  background-color: antiquewhite;
+  background-color: rgb(199, 195, 190);
+  margin: 20px 0;
 }
 
 .price {
@@ -23,41 +50,80 @@ body {
   color: rgb(99, 97, 97);
   font-size: small;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .more-info:link {
   color: #000000;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .more-info:visited {
   color: #000000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .more-info:hover {
   color: #000000;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.color {
+  background-color: #000;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+.color-red {
+  background-color: #ec2f2f;
+}
+.color-yellow {
+  background-color: #f0bf1e;
+}
+.color-green {
+  background-color: #90cc20;
+}
+.color-brown {
+  background-color: #885214;
 }
 
 .details-title {
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .details-list {
   list-style: square;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
 }
 
 .add-cart {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 20px;
   text-transform: uppercase;
-  font-size: large;
-  background-color: #000000;
-  color: #ffffff;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border-top: 4px solid black;
 }
 
 .add-cart:hover {
   background-color: #ffffff;
   color: #000000;
-  border: none;
+  border: 2px solid black;
 }
