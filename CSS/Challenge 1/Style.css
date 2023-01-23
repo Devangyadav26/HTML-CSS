@@ -20,8 +20,13 @@ h1 {
   font-style: italic;
 }
 
+h1::first-letter {
+  font-style: normal;
+  margin-right: 20px;
+}
+
 .container {
-  width: 500px;
+  width: 700px;
   margin: 0 auto;
   position: relative;
 }
@@ -33,6 +38,20 @@ nav {
 h2 {
   font-size: 30px;
   margin: 20px 0;
+  position: relative;
+}
+
+h2::after {
+  content: "Top";
+  color: black;
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
 }
 
 h3 {
