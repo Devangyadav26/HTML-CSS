@@ -110,7 +110,6 @@ li {
   margin-bottom: 10px;
 }
 
-ul,
 ol {
   padding-left: 50px;
 }
@@ -132,6 +131,8 @@ li :last-child {
 .related-author {
   font-size: 16px;
   font-weight: bold;
+  font-weight: normal;
+  font-style: italic;
 }
 
 .unlist {
@@ -179,7 +180,6 @@ button {
   font-size: 18px;
   padding: 16px;
   cursor: pointer;
-
   position: absolute;
   bottom: 50px;
   right: 50px;
@@ -206,10 +206,38 @@ aside {
 
 .author-box {
   display: flex;
-  align-items: baseline;
-  margin-bottom: 10px;
+  align-items: center;
+  /* margin-bottom: 10px; */
 }
 
 .related-post {
   display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+  margin-bottom: 60px;
+}
+
+aside {
+  flex: 0 0 300px;
+  margin-top: 30px;
 }
