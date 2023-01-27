@@ -7,12 +7,12 @@ Welcome to my HTML and CSS learning repository! Here, I will be documenting my p
 - Basic HTML structure and tags
 - CSS selectors and properties
 - Box model and layout
-
-## What I'm Planning to Learn
-
 - Responsive design principles
 - Advanced CSS layout techniques
 - CSS Grid and Flexbox
+
+## What I'm Planning to Learn
+
 - CSS animations and transitions
 - CSS preprocessors (SASS/SCSS)
 
