@@ -1,11 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-  width: 700px;
-  margin: 0 auto;
+  border: 4px solid black;
+  width: 825px;
+  margin: 10px auto;
+  position: relative;
 }
 
 .sale {
@@ -18,26 +21,24 @@
   padding: 7px 15px;
   display: inline-block;
   position: absolute;
-  top: -17px;
-  left: 20px;
+  top: -20px;
+  left: -20px;
 }
 
 body {
   font-family: sans-serif;
   line-height: 1.4;
-  margin-left: 20px;
-}
-
-.product {
-  border: 4px solid black;
-  position: relative;
 }
 
 .product-title {
   font-weight: bold;
   text-align: center;
-  background-color: rgb(199, 195, 190);
-  margin: 20px 0;
+  background-color: rgb(230, 229, 228);
+  margin: auto;
+}
+
+.product-description{
+  margin-bottom: 10px;
 }
 
 .price {
@@ -50,7 +51,7 @@ body {
   color: rgb(99, 97, 97);
   font-size: small;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .more-info:link {
@@ -72,9 +73,6 @@ body {
   background-color: #000;
   height: 22px;
   width: 22px;
-  display: inline-block;
-  margin-right: 10px;
-  margin-top: 20px;
 }
 
 .color-blue {
@@ -96,13 +94,11 @@ body {
 .details-title {
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 5px;
 }
 
 .details-list {
   list-style: square;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-bottom: 10px;
 }
 
@@ -126,4 +122,49 @@ body {
   background-color: #ffffff;
   color: #000000;
   border: 2px solid black;
+}
+
+ .align{
+  display: flex;
+  gap: 20px;
+ }
+ 
+.product-price{
+  margin-bottom: 10px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ .product-colors{
+  margin-top: 10px;
+  display: flex;
+  gap: 10px
+  
+}
+
+/*.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container--1{
+  display: flex;
+  align-items: center;
+}  */
+
+.product{
+  flex: 1;
+  margin-top: 20px;
+}
+
+.product--1{
+  flex: 1;
+  margin-top: 20px;
+}
+
+.product-details{
+  flex: 1;
+  margin-top: 20px;
 }
